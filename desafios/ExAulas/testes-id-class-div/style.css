@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+body {
+    background-color: #05e8e069;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    
+}
+
+h1#tema {
+    background-color: #08ffb19f;
+    font-family: "Kaushan Script", sans-serif;
+    color: #004891;
+    text-align: center;
+    font-size: 4em;
+}
+
+h1.titulos {
+    background-color: #08ffb19f;
+    color: #077FF5;
+}
+
+h2.subtitulo {
+    border: 3px solid #08ffb19f;
+    padding: 5px;
+    color: #00ade2;
+    
+}
+
+
+div > p {
+    display: none;
+}
+/*hover éuma pseudo classe*/
+div:hover > p {
+    display: block;
+    background-color: #07f5664f;
+    text-align: justify;
+}
+
+p {
+    text-indent: 10px;
+    text-align: justify;
+}

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to left, #72F2EB, #00CCBF);
+}
+
+main {
+    background-color: white;
+
+    /*border-radius: 10px; == Define os raios da borda da borda externa.*/
+    border-radius: 10px;
+
+    /*box-shadow: 10px 10px 10px #00756d60; == vai fazer com que crie uma sombra.*/
+    box-shadow: 10px 10px 10px #00756d60;
+
+    /*width: 600px; == Especifica a largura da área de conteúdo, área de preenchimento ou área de borda (dependendo do 'dimensionamento da caixa') de determinadas caixas.*/
+    width: 600px;
+
+    /*padding: 10px; == Propriedade abreviada para definir valores para a espessura da área de preenchimento. Se a esquerda for omitida, é o mesmo que a direita. Se for omitido bottom é o mesmo que top, se for omitido direito é o mesmo que top. O valor não pode ser negativo.*/
+    padding: 10px;
+
+    /*margin: auto; == Propriedade abreviada para definir valores para a espessura da área da margem. Se a esquerda for omitida, é o mesmo que a direita. Se for omitido bottom é o mesmo que top, se for omitido direito é o mesmo que top. Valores negativos para propriedades de margem são permitidos, mas pode haver limites específicos de implementação.*/
+    margin: auto;
+}
+
+h1 {
+    color: #3F7C85;
+    text-align: center;
+    text-shadow: 1px 1px 2px #284f5577;
+}
+
+h2 {
+    color: #747E7E;
+}
+
+p {
+    text-align: justify;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        h1 { /* Box Level */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+
+            essas 3 linhas de códicos podemser substituidas por...
+
+            border: 10px solid black; 
+             
+            seguindo sempre a ordemde largura estilo e cor.
+            */
+            border: 10px solid black;
+            
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            essas 4 linhas de código podemser substituidas por...
+
+            "padding: 10px 10px 10px 10px;"
+            
+            seguindo sempre a ordem: cima, direita, baixo e esquerda/// se as medidas foram iguais basta vc colocar apenas uma vez a medida
+            */
+            padding: 10px;
+
+            /*
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            essas 4 linhas de código podemser substituidas por...
+
+            "margin: 10px auto 10px auto;"
+
+            seguindo sempre a ordem: cima, direita, baixo e esquerda/// se as medidas foram iguais basta vc colocar apenas uma vez a medida
+            */
+            margin: 10px auto 10px auto;
+
+            /*
+            outline-width: 10px;
+            outline-style: solid;
+            outline-color: green;
+
+            essas 4 linhas de códigopodem ser simplificadas por...
+
+            "outline: 10px solid green;"
+
+            seguindo sempre a ordemde largura estilo e cor.
+            */
+
+            outline: 10px solid green;
+        }
+
+        a { /* Inline Level */
+
+            /*
+            Se eu quiser transforma minha tag a em um elemento Box Level basta eu utilizar a tag (diplay="block")
+            */
+
+            border-width: 2px;
+            border-style: solid;
+            border-color: red;
+        }
+
+        p {
+            text-indent: 10px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas Inline-level</a>. Vamos ver como tudod isso funciona.</p>
+</body>
+</html>

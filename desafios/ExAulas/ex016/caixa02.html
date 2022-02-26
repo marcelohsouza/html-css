@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groups Tags</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, black, #3a3a3ac5, black);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        header {
+            background-color:  white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: lightgray;
+            padding: 10px;
+            box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.425);
+            /*
+            A ordem do box shadow é:
+            
+            - horizontal
+            - vertical
+            - blur
+            - spread
+            - cor
+            */
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+            margin-right: 20px;
+        }
+
+        nav:active>a.home {
+            color: white;
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px 10px 0px 10px;
+            text-align: justify;
+            border-radius: 5px;
+        }
+
+        #assuntos>h1 {
+            padding: 5px;
+            border: 5px solid lightgrey;
+        }
+        #noticias>article{
+            padding: 5px;
+            border: 5px solid lightblue;
+        }
+
+        article>h2 {
+            padding: 5px;
+            border: 5px solid lightgrey;
+        }
+
+        p{
+            text-indent: 10px;
+        }
+
+        footer {
+            background-color: black;
+            padding: 10px;
+            margin: 0px 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <!--navegação entre páginas = nav-->
+        <nav>
+            <a href="#" class="home">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <!--seção = section-->
+        <section id="assuntos">
+            <h1>Neymar faz 7 gols em um Jogo</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo incidunt sapiente hic, eos quas omnis culpa. Voluptate rerum dignissimos voluptatibus aliquid beatae fugit, obcaecati voluptates vitae iure maiores sed illum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus ratione modi beatae unde molestias quis nobis praesentium labore quia cupiditate perspiciatis et asperiores veritatis, laboriosam animi perferendis. Expedita, dolorem quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure omnis modi itaque possimus excepturi tenetur dolor, voluptate libero corporis, ut eum aliquid nam. Qui veniam est ex adipisci quaerat dolore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in facilis molestias cumque rem repellendus veniam ut at. Suscipit sunt id deleniti quia laboriosam. Earum, amet. Odit ad perferendis delectus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, velit aliquam culpa impedit atque harum. Amet vel pariatur dolorum? Alias amet consequatur asperiores nesciunt iste provident eos molestiae repudiandae eveniet?</p>
+        </section>
+        <section id="noticias">
+            <!--artigo = article-->
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ipsum vero modi, quisquam voluptatem ipsam, corrupti quam sed quasi provident deleniti? Optio aliquam quidem, suscipit error rem est voluptatibus esse! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit unde enim optio omnis modi possimus nisi laboriosam, rem soluta beatae sit dolore, corrupti facilis fugiat dolorum veritatis animi esse eius. Lorem ipsum dolor sit, amet consectetur adipisicing elit. At maiores libero, odio voluptates culpa, nam doloribus perspiciatis alias sequi consectetur totam ab, fuga corporis odit quas impedit hic rem similique! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates consequatur voluptate incidunt, eveniet voluptatibus vel aliquid blanditiis omnis magni, praesentium doloribus. Omnis inventore dicta adipisci similique. Voluptate maxime quidem similique? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, labore fugiat? Laboriosam aperiam tempore sed explicabo modi iure atque, vitae eos illo aliquam, ipsam corrupti non quod odio iste quis!</p>
+                <aside>
+                    <p>Artigo escrito por Otávio Mesquita</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Feito por Marcelo Henrique de Souza
+    </footer>
+</body>
+</html>

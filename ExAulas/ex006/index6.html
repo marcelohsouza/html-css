@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando Links externos</h1>
+    
+    <!--Links podem ser feitos usando a tag a(ancora), e logo em seguida ele ja pede um href(hypertexto de referencia)-->
+    
+    <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório público no GitHub</a></p>
+    
+    <!--se eu quiser que o link seja aberto em outra guia basta colocar a tag "target" e a tag "rel" dentro da tag "A"-->
+    
+    <p>Você também pode acessar o meu <a href="http://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no youtube</a></p>
+   
+    <!--Para poder controlar onde o site de destino vai abrir, podemos usar o atributo target,
+que suporta os seguintes valores:
+‣ _blank vai abrir o link em uma nova janela em branco
+‣ _self vai abrir o link na janela ou frame atual (padrão)
+‣ _top vai desfazer todos os frames e abrir o destino no navegador completo
+‣ _parent similar ao uso do _top em uma referência à janela mãe
+‣ nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir-->
+
+<h2>Usando Links internos</h2>
+<p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a></p>
+<p><a href="noticias/pag003.html" rel="next" target="_self">Página de notícias</a>
+
+    <!--no código da pg3, se eu quiser voltar para pagina index basta colocar <a href="../ e o nome do arquivo(no caso colocaria: index6.html)"></a>-->
+    
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="10 - Ligações em toda parte.pdf" target="_blank" rel="external" download="10 - Ligações em toda parte.pdf" type="application/zip">Clique aqui para Baixar PDF da aula 10</a></li>
+        <li><a href="10 - Ligações em toda parte.zip" download="10 - Ligações em toda parte.zip" type="application/zip">Baixe o PDF compactado em zip</a></li>
+    </ul>
+
+</body>
+</html>
