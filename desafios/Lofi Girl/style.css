@@ -1,0 +1,242 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vh 16vw;
+}
+
+header, .links-header{
+    align-items: center;
+}
+
+.links-header {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    cursor: pointer;
+}
+
+.links-header a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+.links-header a:hover{
+    color: grey;
+}
+
+.active{
+    color: #518a88 !important;
+}
+
+.main-bg{
+    width: 100%;
+    height: 70vh;
+    background-image: url('img/bg-main.jpg');
+    background-size: cover;
+    background-position-y: 35%;
+}
+
+.social{
+    width: 100%;
+    text-align: center;
+    margin: 7vh 0;
+}
+
+.social h2{
+    text-transform: uppercase;
+}
+
+.icons-social{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.icons-social img{
+    height: 12vh;
+    width: auto;
+    margin: 20px 15px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: ease-in .2s;
+}
+
+.icons-social img:hover{
+    filter: grayscale(0%);
+}
+
+.latest-releases{
+    background: url('img/releases/bg.jpg');
+    padding: 5vh 0;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.latest-releases h2{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+    padding: 20px 0;
+}
+
+.releases-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    width: 80vw;
+}
+
+.release .release-title, .release-author{
+    color: white;
+}
+
+.release-title{
+    font-size: .9rem;
+}
+
+.release-bg{
+    height: 80%;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    background-size: cover;
+}
+
+.r-bg-1{background-image: url('https://cdn.shopify.com/s/files/1/0011/6005/2795/files/Lofi-121-1_2048x2048.jpg?v=1645545847');}
+
+.r-bg-2{background-image: url('https://cdn.shopify.com/s/files/1/0011/6005/2795/files/11_aa38df65-fb1e-4a27-ba6a-0586102473d7_2048x2048.png?v=1645545246');}
+
+.r-bg-3{background-image: url('https://cdn.shopify.com/s/files/1/0011/6005/2795/files/11_1_877b5fd7-4c47-4c18-a9f0-fa1f9f435dda_2048x2048.png?v=1645545569');}
+
+.r-bg-4{background-image: url('https://cdn.shopify.com/s/files/1/0011/6005/2795/files/Untitled_Artwork-1_2048x2048.jpg?v=1644840101');}
+
+.r-bg-5{background-image: url('https://cdn.shopify.com/s/files/1/0011/6005/2795/files/threeofus_square_2048x2048.jpg?v=1644838577');}
+
+.release{
+    padding: 10px;
+    width: 100%;
+    height: 40vh;
+}
+
+/* 
+    BUTTON CLASS 
+*/
+.btn{
+    background: #306850; 
+    padding: 2vh 5vw;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s ease-in;
+    border: 1px #306850 solid;
+}
+
+.btn:hover{
+    border: 1px #306850 solid;
+    color: #306850;
+    background: none
+}
+
+.merch{
+    text-align: center;
+}
+
+.merch-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.merch-category{
+    width: 12vw;
+    height: 40vh;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+.merch-bg{
+    height: 70%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.m-bg-1{background-image: url('https://cdn.shopify.com/s/files/1/0011/6005/2795/files/1_2f51eb20-35be-4d58-9955-b463e4f203e7.png?v=1638794987');}
+.m-bg-2{background-image: url('https://cdn.shopify.com/s/files/1/0011/6005/2795/files/3_caf3a305-1eef-40a1-8c97-484a781a61ea.png?v=1638795126');}
+.m-bg-3{background-image: url('https://cdn.shopify.com/s/files/1/0011/6005/2795/files/3ff6d6f6f18b832b67b6ee07c071949b.png?v=1643979864');}
+.m-bg-4{background-image: url('https://cdn.shopify.com/s/files/1/0011/6005/2795/files/vinyl.png?v=1638794667');}
+
+
+/*
+    MOBILE
+*/
+
+.menu-icon-header{
+    display: none;
+}
+
+.menu-hamburger{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.menu-hamburger span{
+    background: #000000;
+    width: 17px;
+    height: 2px;
+}
+
+@media screen and (max-width: 700px){
+    .releases-flex{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .icons-social{
+        gap: 10px;
+        align-items: center;
+    }
+
+    .icons-social img{
+        height: 60px;
+        width: 60px;
+        padding: 0;
+    }
+
+    .links-header{
+        display: none;
+    }
+
+    .menu-icon-header{
+        display: inherit;
+    }
+
+    .main-bg{
+        background-position-x: center;
+    }
+}
